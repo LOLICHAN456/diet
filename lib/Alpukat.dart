@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class Ayam extends StatelessWidget {
-  const Ayam({Key? key}) : super(key: key);
+class Alpukat extends StatelessWidget {
+  const Alpukat({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Dada Ayam")),
+      appBar: AppBar(title: Text("Buah Alpukat")),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
@@ -14,22 +14,24 @@ class Ayam extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(10.0),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(30),
+              child: ClipOval(
                 child: Image(
                   width: 300,
                   height: 300,
                   fit: BoxFit.cover,
                   image: NetworkImage(
-                    "https://awsimages.detik.net.id/community/media/visual/2016/06/01/a27ee39f-273b-4789-8ad6-bdc2deb4eca1_43.jpg?w=480",
+                    "https://cms-dashboard.realfood.co.id/app/uploads/2021/09/avocado.jpg",
                   ),
                 ),
               ),
             ),
             Center(
               child: Text(
-                "Manfaat Dada Ayam",
-                style: TextStyle(fontSize: 25.0, fontStyle: FontStyle.normal),
+                "Manfaat Alpukat Untuk Diet",
+                style: TextStyle(
+                    fontSize: 25.0,
+                    fontStyle: FontStyle.normal,
+                    fontWeight: FontWeight.bold),
               ),
             ),
             Padding(
@@ -47,7 +49,7 @@ class Ayam extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "1. Membantu Menurunkan Berat Badan",
+                        "1. Menurunkan Berat Badan",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -71,7 +73,7 @@ class Ayam extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "2. Meningkatkan Metabolisme Tubuh",
+                        "2. Meningkatkan Kesehatan Pencernaan",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -95,7 +97,7 @@ class Ayam extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "3. Mengurangi Tekanan Darah Tinggi",
+                        "3. Menahan Rasa Lapar",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -119,31 +121,7 @@ class Ayam extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "4. Menghasilkan Energi",
-                        style: TextStyle(fontSize: 18.0),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 12.0),
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Text5()));
-                },
-                child: Hero(
-                  tag: "Text5",
-                  child: Card(
-                    margin: EdgeInsets.all(2),
-                    color: Colors.amber,
-                    elevation: 10,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        "5. Sumber Vitamin",
+                        "4. Menambah Asupan Lemak Sehat",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -155,30 +133,6 @@ class Ayam extends StatelessWidget {
         ),
       ),
       backgroundColor: Colors.green,
-    );
-  }
-}
-
-class Gambar1 extends StatelessWidget {
-  const Gambar1({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      body: InkWell(
-        onTap: () {
-          Navigator.pop(context);
-        },
-        child: Hero(
-          tag: "gambar1",
-          child: Center(
-            child: Image(
-              image: NetworkImage(
-                  "https://cdn0-production-images-kly.akamaized.net/fet7xh0VQKfMNvoWlX7j7KwT5-0=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1478423/original/087918300_1484897727-lombok-classic-sate-rembiga1-1024x683.jpg"),
-            ),
-          ),
-        ),
-      ),
     );
   }
 }
@@ -202,7 +156,7 @@ class Text1 extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Untuk menurunkan berat badan, seseorang disarankan untuk mengkonsumsi makanan yang rendah kalori. Misalnya buah, sayur, biji-bijian, dan sumber lemak dan protein sehat seperti dada ayam.  Dada ayam menjadi bagian ayam yang rendah kalori sehingga cocok untuk orang yang mencoba menurunkan berat badan. \n\nSatu dada ayam tanpa kulit, tanpa tulang, dimasak (172 gram) memiliki rincian gizi 283 kalori; 53,4 gram protein; 0 gram karbohidrat; dan 6,2 gram lemak Artinya, sekitar 80% kalori dalam dada ayam berasal dari protein dan 20% berasal dari lemak.",
+                  "Meskipun buah alpukat mengandung kalori yang tinggi, tetapi kandungan serat dalam alpukat bisa membuat kamu merasa kenyang lebih lama. Hal ini membuat kamu lebih mudah mengontrol jumlah asupan makanan yang harus dikonsumsi.\n\nJadi, tidak ada salahnya masukkan alpukat ke dalam menu diet sehari-hari. Kamu bisa menambahkan alpukat dalam salad atau membuat minuman jus alpukat tetapi tanpa tambahan gula atau pemanis buatan untuk sarapan.",
                   style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
               ),
@@ -234,7 +188,7 @@ class Text2 extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Walaupun mengubah pola makan atau mengurangi porsi makan, orang yang sedang diet tetap harus memenuhi kebutuhan protein. Selain berfungsi menurunkan berat badan, protein juga meningkatkan metabolisme tubuh dan mempertahankan massa otot. \n\nMaka langkah yang tepat jika memilih dada ayam untuk diet. Dada ayam tanpa kulit yang telah dimasak (172 gram) mengandung 54 gram protein. Tak heran jika dada ayam menjadi makanan pilihan binaragawan untuk menurunkan berat badan, tapi tetap meningkatkan metabolisme tubuh.",
+                  "Buah alpukat mengandung kandungan serat yang tinggi. Mengonsumsi alpukat saat diet penting untuk mendorong pertumbuhan bakteri baik dalam usus karena dapat membantu meningkatkan kesehatan pencernaan.\n\nKetidakseimbangan bakteri dalam tubuh dapat berkaitan langsung dengan berbagai kondisi gangguan kesehatan, seperti kenaikan berat badan, diabetes, dan kolesterol.",
                   style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
               ),
@@ -266,7 +220,7 @@ class Text3 extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Dada ayam, dengan atau tanpa kulit, juga mengandung sumber zat besi yang baik, mineral yang membantu menghasilkan energi, dan niasin (vitamin B3) yang merupakan vitamin penting untuk mengubah makanan menjadi energi. Faktanya, niasin adalah nutrisi yang tidak bisa diproduksi oleh tubuh sehingga harus didapatkan dari makanan.  \n\nDada ayam merupakan sumber vitamin B3 atau niasin yang sangat baik. Sebuah penelitian menyatakan bahwa niasin pada dada ayam diperlukan untuk metabolisme energi, terutama untuk mengubah karbohidrat menjadi energi serta mengendalikan kadar kolesterol dan asam lemak.",
+                  "Kandungan serat pada buah alpukat bisa membantu kamu menahan rasa lapar ketika sedang diet. Dengan begitu, kamu bisa lebih mengontrol asupan yang kamu konsumsi sehingga tujuan diet kamu dapat tercapai dengan baik.",
                   style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
               ),
@@ -298,39 +252,7 @@ class Text4 extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Kunci utama dalam menjalankan diet yang sehat adalah dengan menjaga tekanan darah tinggi Salah satunya adalah dengan mengkonsumsi protein yang tepat, seperti dada ayam. Dada ayam untuk diet jika dimasak menggunakan api kecil dan tanpa mentega serta garam bisa mengurangi tekanan darah tinggi. Bahkan jika ditambah sayuran hijau seperti bayam bisa menyehatkan jantung.",
-                  style: TextStyle(fontSize: 18.0, color: Colors.white),
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
-      backgroundColor: Colors.amber,
-    );
-  }
-}
-
-class Text5 extends StatelessWidget {
-  const Text5({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: InkWell(
-        onTap: () {
-          Navigator.pop(context);
-        },
-        child: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Card(
-              margin: EdgeInsets.all(5),
-              color: Colors.black,
-              elevation: 10,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  "Dada ayam juga mengandung selenium serta vitamin B3 dan B2. Selenium merupakan mineral penting yang berfungsi untuk melawan infeksi yang terjadi pada tubuh. Dada ayam juga mengandung vitamin B3 yang berfungsi untuk mendukung metabolisme tubuh, fungsi sistem saraf, dan perlindungan antioksidan. Sementara vitamin B2 memberi manfaat kesehatan untuk menghasilkan energi. ",
+                  "Jangan terkecoh dengan namanya, sebab lemak sehat atau lemak tak jenuh merupakan asam lemak esensial yang diperlukan oleh tubuh karena tubuh tidak dapat memproduksinya sendiri. Lemak tak jenuh ini berfungsi untuk menghasilkan kolesterol baik dan mengurangi kolesterol jahat.\n\nLemak tak jenuh dalam buah alpukat lebih sulit dicerna oleh tubuh dibandingkan dengan nutrisi lainnya. Hal ini membantu kamu merasakan kenyang lebih lama sehingga cocok jika kamu ingin menurunkan berat badan.",
                   style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
               ),

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class Kacang extends StatelessWidget {
-  const Kacang({Key? key}) : super(key: key);
+class Sepeda extends StatelessWidget {
+  const Sepeda({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Kacang - Kacangan")),
+      appBar: AppBar(title: Text("Bersepeda")),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
@@ -20,14 +20,14 @@ class Kacang extends StatelessWidget {
                   height: 300,
                   fit: BoxFit.cover,
                   image: NetworkImage(
-                    "https://s1.bukalapak.com/bukalapak-kontenz-production/content_attachments/57446/original/kacang.jpg",
+                    "https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2020/11/Featured_Manfaat-Bersepeda-Imun-Kuat-Langsing-hingga-Bikin-Happy.jpg",
                   ),
                 ),
               ),
             ),
             Center(
               child: Text(
-                "Jenis Kacang - Kacangan Untuk Diet",
+                "Manfaat Bersepeda Untuk Diet",
                 style: TextStyle(
                     fontSize: 25.0,
                     fontStyle: FontStyle.normal,
@@ -49,7 +49,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "1. Kedelai",
+                        "1. Bantu Turunkan Berat Badan",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -73,7 +73,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "2. Edamame",
+                        "2. Membakar Kalori",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -97,7 +97,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "3. Kenari",
+                        "3. Mengecilkan Perut",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -121,7 +121,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "4. Mete",
+                        "4. Latihan Otot Inti",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -145,7 +145,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "5. Kacang Tanah",
+                        "5. Membuat Badan Lebih Bugar",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -173,29 +173,17 @@ class Text1 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://asset.kompas.com/crops/638LAp8Q7AyHp40-CnujsuDL4gI=/0x0:1000x667/750x500/data/photo/2021/11/27/61a2087bc9b84.jpg",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(2),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Salah satu manfaat bersepeda untuk diet, yaitu bantu turunkan berat badan. Bersepeda dianggap efektif dalam meningkatkan metabolisme, membangun otot, dan membakar lemak di dalam tubuh.\n\nUntuk mendapatkan hasil optimal, Anda perlu mengombinasikan bersepeda dengan pola makan sehat dan seimbang. Dengan begitu, lemak dalam tubuh akan mudah dibakar sehingga dengan cepat akan menurunkan berat badan.\n\n",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(2),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Kacang kedelai umumnya mudah ditemui dalam bentuk yang sudah diolah seperti pada tempe, tahu atau produk susu. Sumber serat dalam kedelai dapat membantu Anda tetap kenyang dalam waktu lebih lama. Sedangkan serat nabatinya berguna untuk memperlancar pencernaan.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -217,29 +205,17 @@ class Text2 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://akcdn.detik.net.id/community/media/visual/2021/06/24/ilustrasi-edamame_169.jpeg?w=620",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(5),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Manfaat bersepeda untuk diet selanjutnya, yaitu efektif membakar kalori. Bersepeda selama satu jam saja dapat membakar setidaknya 600 kalori. Maka dari itu, jenis olahraga ini dapat menjaga berat badan tetap ideal.\n\nSelain itu, bersepeda juga dianggap penting untuk menurunkan risiko stres. Saat bersepeda, tubuh akan menurunkan kadar hormon stres, seperti adrenalin dan kortisol di dalam tubuh.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Bagi Anda yang sedang menjalani diet rendah kalori, edamame bisa menjadi pilihan makanan sehat. Cara terbaik mengonsumsi edamame adalah dengan direbus. \n\nSetengah cangkir edamame hanya mengandung 95 kalori. Selain kaya serat dan protein, edamame juga bermanfaat dalam menjaga kesehatan otak.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -261,29 +237,17 @@ class Text3 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://akcdn.detik.net.id/visual/2021/06/24/ilustrasi-kacang-kenari_169.jpeg?w=650",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(5),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Bersepeda juga dianggap efektif untuk mengecilkan perut. Sebab, olahraga ini dapat membantu membakar lemak di dalam perut. Agar manfaat bersepeda untuk diet ini efektif, sebaiknya jangan mengonsumsi makanan sebelum bersepeda.\n\nDengan melakukan kegiatan bersepeda secara rutin dan tetap menjalankan program diet, Anda akan mendapatkan tubuh ideal. Selain itu, olahraga ini juga menurunkan risiko perut buncit.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Kenari adalah kacang yang bagus untuk diet sebagai sumber asam lemak omega-3. Kenari juga mengandung asam alfa-linolenat (ALA) yang sangat baik bagi jantung dan mendukung kesehatan mental. \n\nDalam 1 ons kacang kenari hanya terdapat 182 kalori. Beberapa hasil penelitian menunjukkan bahwa konsumsi kacang kenari bisa meningkatkan produksi kolesterol baik (HDL). ",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -305,29 +269,17 @@ class Text4 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://akcdn.detik.net.id/community/media/visual/2018/09/12/b9526786-ff10-4dc0-8d1d-fc1455b24052_169.jpeg?w=620",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(5),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Manfaat bersepeda untuk diet selanjutnya, yaitu melatih otot inti, termasuk punggung dan perut. Olahraga ini mampu membuat perut tampak lebih ramping dan terhindar dari perut buncit.\n\nBersepeda juga dapat membantu mempertahankan tubuh Anda menjadi lebih tegak, Otot perut dan punggung yang kuabisa menopang tulang belakang. Maka dari itu, usahakan untuk melakukan olahraga ini secara rutin dan teratur agar berat badan tetap ideal.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Cashews nuts atau kacang mete termasuk kacang-kacangan yang mengandung sedikit lemak yaitu 12 gram dalam 1 ons. Kenari juga tinggi magnesium sebesar 20 persen kebutuhan harian. \n\nHasil pengamatan menunjukkan konsumsi kacang mete dapat mengurangi tekanan darah dan meningkatkan kadar kolesterol HDL.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -349,29 +301,17 @@ class Text5 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://res.cloudinary.com/dk0z4ums3/image/upload/v1616471431/attached_image/manfaat-kacang-tanah-sebagai-teman-diet-0-alodokter.jpg",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(5),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Manfaat bersepeda untuk diet juga bisa membuat badan tampak lebih sehat dan bugar. Jika Anda baru mengenal kebugaran atau baru pulih dari cedera, ada baiknya bersepeda dengan intensitas rendah. Saat badan sudah pulih kembali, Anda bisa meningkatkan intensitas bersepeda.\n\nSelain membuat badan lebih bugar, bersepeda juga dapat meredakan stres, depresi, atau kecemasan. Biasanya, beberapa gangguan tersebut juga berpengaruh terhadap berat badan. Dengan bersepeda, Anda akan terhindar dari stres dan memiliki tubuh yang ideal.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Kacang tanah mempunyai kandungan gula yang sangat rendah sehingga dapat dijadikan alternatif camilan sehat. \n\nSebuah studi menemukan bahwa wanita yang makan selai kacang lebih dari lima kali dalam seminggu, dapat menekan risiko terkena diabetes tipe 2.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),

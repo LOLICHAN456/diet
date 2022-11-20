@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
-class Kacang extends StatelessWidget {
-  const Kacang({Key? key}) : super(key: key);
+class Lari extends StatelessWidget {
+  const Lari({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Kacang - Kacangan")),
+      appBar: AppBar(title: Text("Lari")),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
@@ -20,14 +21,14 @@ class Kacang extends StatelessWidget {
                   height: 300,
                   fit: BoxFit.cover,
                   image: NetworkImage(
-                    "https://s1.bukalapak.com/bukalapak-kontenz-production/content_attachments/57446/original/kacang.jpg",
+                    "https://asset.kompas.com/crops/85NWcJqJv0RK0sS9thwlt-gyHD8=/0x0:0x0/750x500/data/photo/2014/07/18/1453596shutterstock-143473051p.jpg",
                   ),
                 ),
               ),
             ),
             Center(
               child: Text(
-                "Jenis Kacang - Kacangan Untuk Diet",
+                "Jenis Lari Untuk Diet",
                 style: TextStyle(
                     fontSize: 25.0,
                     fontStyle: FontStyle.normal,
@@ -49,7 +50,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "1. Kedelai",
+                        "1. Lari Dasar",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -73,7 +74,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "2. Edamame",
+                        "2. Lari Jauh",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -97,7 +98,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "3. Kenari",
+                        "3. Lari Interval",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -121,31 +122,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "4. Mete",
-                        style: TextStyle(fontSize: 18.0),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 12.0),
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Text5()));
-                },
-                child: Hero(
-                  tag: "Text5",
-                  child: Card(
-                    margin: EdgeInsets.all(2),
-                    color: Colors.amber,
-                    elevation: 10,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        "5. Kacang Tanah",
+                        "4. Hill Repeats",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -175,10 +152,13 @@ class Text1 extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
-                ClipOval(
+                ClipRRect(
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(20.0),
+                      bottomLeft: Radius.circular(20.0)),
                   child: Image.network(
-                    "https://asset.kompas.com/crops/638LAp8Q7AyHp40-CnujsuDL4gI=/0x0:1000x667/750x500/data/photo/2021/11/27/61a2087bc9b84.jpg",
-                    width: 200,
+                    "https://asset.kompas.com/crops/rchf6JzRLoZEA8rPRl3ZJMUCGo0=/0x103:789x629/750x500/data/photo/2018/05/24/836450385.jpg",
+                    width: 300,
                     height: 200,
                     fit: BoxFit.cover,
                   ),
@@ -190,7 +170,7 @@ class Text1 extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      "Kacang kedelai umumnya mudah ditemui dalam bentuk yang sudah diolah seperti pada tempe, tahu atau produk susu. Sumber serat dalam kedelai dapat membantu Anda tetap kenyang dalam waktu lebih lama. Sedangkan serat nabatinya berguna untuk memperlancar pencernaan.",
+                      "Lari dasar atau basic running adalah jenis yang bisa kamu pilih bila ingin menurunkan berat badan dengan berlari. Lari pendek hingga sedang ini berjarak sekitar 10 kilometer dan dilakukan dengan kecepatan alami. ",
                       style: TextStyle(fontSize: 18.0, color: Colors.white),
                     ),
                   ),
@@ -219,10 +199,13 @@ class Text2 extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
-                ClipOval(
+                ClipRRect(
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(20.0),
+                      bottomLeft: Radius.circular(20.0)),
                   child: Image.network(
-                    "https://akcdn.detik.net.id/community/media/visual/2021/06/24/ilustrasi-edamame_169.jpeg?w=620",
-                    width: 200,
+                    "https://cms.sehatq.com/public/img/article_img/gemar-lari-jarak-jauh-kenali-manfaat-dan-risikonya-1582027314.jpg",
+                    width: 300,
                     height: 200,
                     fit: BoxFit.cover,
                   ),
@@ -234,7 +217,7 @@ class Text2 extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      "Bagi Anda yang sedang menjalani diet rendah kalori, edamame bisa menjadi pilihan makanan sehat. Cara terbaik mengonsumsi edamame adalah dengan direbus. \n\nSetengah cangkir edamame hanya mengandung 95 kalori. Selain kaya serat dan protein, edamame juga bermanfaat dalam menjaga kesehatan otak.",
+                      "Cara menurunkan berat badan dengan berlari bisa dengan memilih jenis lari ini. Lari jauh atau long run berjarak 15-20 kilometer dan dilakukan dengan kecepatan yang stabil atau sama. Lari jenis ini membantu meningkatkan kebugaran dan daya tahan tubuh secara keseluruhan.",
                       style: TextStyle(fontSize: 18.0, color: Colors.white),
                     ),
                   ),
@@ -263,10 +246,13 @@ class Text3 extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
-                ClipOval(
+                ClipRRect(
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(20.0),
+                      bottomLeft: Radius.circular(20.0)),
                   child: Image.network(
-                    "https://akcdn.detik.net.id/visual/2021/06/24/ilustrasi-kacang-kenari_169.jpeg?w=650",
-                    width: 200,
+                    "https://asset.kompas.com/crops/os7YU1Bma92-AznLOg7io7Yoz_M=/0x0:1000x667/750x500/data/photo/2019/02/19/3964925291.jpg",
+                    width: 300,
                     height: 200,
                     fit: BoxFit.cover,
                   ),
@@ -278,7 +264,7 @@ class Text3 extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      "Kenari adalah kacang yang bagus untuk diet sebagai sumber asam lemak omega-3. Kenari juga mengandung asam alfa-linolenat (ALA) yang sangat baik bagi jantung dan mendukung kesehatan mental. \n\nDalam 1 ons kacang kenari hanya terdapat 182 kalori. Beberapa hasil penelitian menunjukkan bahwa konsumsi kacang kenari bisa meningkatkan produksi kolesterol baik (HDL). ",
+                      "Lari interval atau interval running adalah lari pendek dan intens yang diulang beberapa kali dengan jeda singkat di antaranya. Misalnya, lari 5 x 600 meter dengan jogging ringan 400 meter di antara setiap interval. Lari ini melatih kekuatan dan kecepatan lari. ",
                       style: TextStyle(fontSize: 18.0, color: Colors.white),
                     ),
                   ),
@@ -307,10 +293,13 @@ class Text4 extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
-                ClipOval(
+                ClipRRect(
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(20.0),
+                      bottomLeft: Radius.circular(20.0)),
                   child: Image.network(
-                    "https://akcdn.detik.net.id/community/media/visual/2018/09/12/b9526786-ff10-4dc0-8d1d-fc1455b24052_169.jpeg?w=620",
-                    width: 200,
+                    "https://hips.hearstapps.com/hmg-prod/images/young-woman-trail-runner-running-in-sunrise-royalty-free-image-1617717554.?crop=1.00xw:0.753xh;0,0.166xh&resize=1200:*",
+                    width: 300,
                     height: 200,
                     fit: BoxFit.cover,
                   ),
@@ -322,51 +311,7 @@ class Text4 extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      "Cashews nuts atau kacang mete termasuk kacang-kacangan yang mengandung sedikit lemak yaitu 12 gram dalam 1 ons. Kenari juga tinggi magnesium sebesar 20 persen kebutuhan harian. \n\nHasil pengamatan menunjukkan konsumsi kacang mete dapat mengurangi tekanan darah dan meningkatkan kadar kolesterol HDL.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-      backgroundColor: Colors.amber,
-    );
-  }
-}
-
-class Text5 extends StatelessWidget {
-  const Text5({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: InkWell(
-        onTap: () {
-          Navigator.pop(context);
-        },
-        child: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://res.cloudinary.com/dk0z4ums3/image/upload/v1616471431/attached_image/manfaat-kacang-tanah-sebagai-teman-diet-0-alodokter.jpg",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Kacang tanah mempunyai kandungan gula yang sangat rendah sehingga dapat dijadikan alternatif camilan sehat. \n\nSebuah studi menemukan bahwa wanita yang makan selai kacang lebih dari lima kali dalam seminggu, dapat menekan risiko terkena diabetes tipe 2.",
+                      "Hampir mirip dengan lari interval, tapi jenis lari ini dilakukan di atas bukit. Misalnya, 10 x 1 menit lari menanjak ke atas bukit yang dilakukan berulang. Mereka melatih kekuatan dan kecepatan lari sambil meningkatkan stamina.",
                       style: TextStyle(fontSize: 18.0, color: Colors.white),
                     ),
                   ),

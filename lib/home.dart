@@ -13,7 +13,7 @@ class MyHome extends StatelessWidget {
           style:
               TextStyle(height: 3, fontSize: 16, fontWeight: FontWeight.bold),
         ),
-        backgroundColor: Colors.red[900],
+        backgroundColor: Colors.pink,
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,

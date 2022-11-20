@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class Kacang extends StatelessWidget {
-  const Kacang({Key? key}) : super(key: key);
+class Renang extends StatelessWidget {
+  const Renang({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Kacang - Kacangan")),
+      appBar: AppBar(title: Text("Berenang")),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
@@ -20,14 +20,14 @@ class Kacang extends StatelessWidget {
                   height: 300,
                   fit: BoxFit.cover,
                   image: NetworkImage(
-                    "https://s1.bukalapak.com/bukalapak-kontenz-production/content_attachments/57446/original/kacang.jpg",
+                    "https://cdn0-production-images-kly.akamaized.net/d6kgZhRrVMwJlSy_6R4ZzObMfFc=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3920805/original/028633600_1643708051-gentrit-sylejmani-JjUyjE-oEbM-unsplash_1_.jpg",
                   ),
                 ),
               ),
             ),
             Center(
               child: Text(
-                "Jenis Kacang - Kacangan Untuk Diet",
+                "Manfaat Berenang Untuk Diet",
                 style: TextStyle(
                     fontSize: 25.0,
                     fontStyle: FontStyle.normal,
@@ -49,7 +49,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "1. Kedelai",
+                        "1. Mengurangi Stress Dan Insomnia",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -73,7 +73,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "2. Edamame",
+                        "2. Menurunkan Berat Badan",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -97,7 +97,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "3. Kenari",
+                        "3. Memelihara Kesehatan Jantung",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -121,7 +121,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "4. Mete",
+                        "4. Meningkatkan Massa Otot",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -145,7 +145,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "5. Kacang Tanah",
+                        "5. Meringankan Nyeri Sendi Dan Saraf Kejepit",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -173,29 +173,17 @@ class Text1 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://asset.kompas.com/crops/638LAp8Q7AyHp40-CnujsuDL4gI=/0x0:1000x667/750x500/data/photo/2021/11/27/61a2087bc9b84.jpg",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(2),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Stres merupakan kondisi psikis yang seringkali datang dan biasanya disebabkan oleh banyaknya pikiran. Hal ini tentu berpengaruh pada aktivitas sehari-hari yang bisa saja terganggu. Parahnya, jika sudah terlalu berat bisa ditinggalkan.\n\nUntuk itu, kamu perlu sesuatu agar gangguan tersebut bisa diatasi. Misal, dengan berenang. Para ahli mengungkapkan bahwa olahraga air ini dapat melemaskan otot tubuh, sehingga kamu dapat lebih tenang.\n\nBaiknya lagi, kualitas tidur dapat terjaga dan kamu terhindar dari penyakit insomnia. Kemudian, pikiranmu juga akan terasa lebih segar dan terbuka. Jadi, saat tengah stres, cobalah luangkan waktu untuk berenang guna relaksasi diri.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(2),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Kacang kedelai umumnya mudah ditemui dalam bentuk yang sudah diolah seperti pada tempe, tahu atau produk susu. Sumber serat dalam kedelai dapat membantu Anda tetap kenyang dalam waktu lebih lama. Sedangkan serat nabatinya berguna untuk memperlancar pencernaan.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -217,29 +205,17 @@ class Text2 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://akcdn.detik.net.id/community/media/visual/2021/06/24/ilustrasi-edamame_169.jpeg?w=620",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(5),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Berat badan ideal adalah satu hal yang paling ingin dimiliki oleh banyak orang. Apapun caranya pasti akan dilakukan oleh siapa saja yang punya cita-cita ini. Dengan catatan tidak membahayakan diri. Misal, diet sewajarnya dengan rutin berolahraga.\n\nSalah satu olahraga yang dianggap cepat dalam menurunkan berat badan ialah berenang. Coba lakukan selama satu jam, sekitar 500-600 kalori akan terbakar dari tubuhmu.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Bagi Anda yang sedang menjalani diet rendah kalori, edamame bisa menjadi pilihan makanan sehat. Cara terbaik mengonsumsi edamame adalah dengan direbus. \n\nSetengah cangkir edamame hanya mengandung 95 kalori. Selain kaya serat dan protein, edamame juga bermanfaat dalam menjaga kesehatan otak.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -261,29 +237,17 @@ class Text3 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://akcdn.detik.net.id/visual/2021/06/24/ilustrasi-kacang-kenari_169.jpeg?w=650",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(5),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Sebuah penelitian mengatakan bahwa berenang mampu meningkatkan sirkulasi darah pada tubuh dan mempermudah penggunaan oksigen. Oleh karenanya, olahraga ini baik bagi kesehatan jantung dan organ tubuh lainnya.\n\nDengan kata lain, jika kamu rutin berenang, kamu akan terhindar dari risiko berbagai penyakit, seperti jantung dan stroke. Bahkan, menurut studi jurnal di tahun 2016, perenang juga cenderung memiliki paru-paru yang lebih kuat.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Kenari adalah kacang yang bagus untuk diet sebagai sumber asam lemak omega-3. Kenari juga mengandung asam alfa-linolenat (ALA) yang sangat baik bagi jantung dan mendukung kesehatan mental. \n\nDalam 1 ons kacang kenari hanya terdapat 182 kalori. Beberapa hasil penelitian menunjukkan bahwa konsumsi kacang kenari bisa meningkatkan produksi kolesterol baik (HDL). ",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -305,29 +269,17 @@ class Text4 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://akcdn.detik.net.id/community/media/visual/2018/09/12/b9526786-ff10-4dc0-8d1d-fc1455b24052_169.jpeg?w=620",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(5),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Kamu pasti sudah tahu bahwa seluruh gerakan renang menuntut otot tubuh untuk melawan tekanan dalam air. Tidak heran jika olahraga ini mampu meningkatkan massa dan kelenturan otot. \n\nJadi, tubuh akan terasa lebih kuat serta kencang karena berenang. Terlebih pada pembentukan otot tangan serta betis. Pasalnya, dua anggota tubuh ini yang lebih banyak bergerak saat melakukan olahraga air tersebut.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Cashews nuts atau kacang mete termasuk kacang-kacangan yang mengandung sedikit lemak yaitu 12 gram dalam 1 ons. Kenari juga tinggi magnesium sebesar 20 persen kebutuhan harian. \n\nHasil pengamatan menunjukkan konsumsi kacang mete dapat mengurangi tekanan darah dan meningkatkan kadar kolesterol HDL.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -349,29 +301,17 @@ class Text5 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://res.cloudinary.com/dk0z4ums3/image/upload/v1616471431/attached_image/manfaat-kacang-tanah-sebagai-teman-diet-0-alodokter.jpg",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(5),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Berenang dianjurkan untuk para penderita arthritis karena dapat meringankan berbagai nyeri sendi, seperti peradangan. Begitu pun dengan kamu yang mengalami osteoporosis atau tulang rapuh, olahraga ini bisa menguranginya.\n\nSelain itu, berbagai gerakan renang juga bisa mengatasi saraf kejepit dengan membantu otot punggung dan tulang belakang menjadi lebih rileks. Jadi, kamu tidak perlu lagi merasa kesulitan untuk beraktivitas karena gangguan tersebut.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Kacang tanah mempunyai kandungan gula yang sangat rendah sehingga dapat dijadikan alternatif camilan sehat. \n\nSebuah studi menemukan bahwa wanita yang makan selai kacang lebih dari lima kali dalam seminggu, dapat menekan risiko terkena diabetes tipe 2.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helloworld/Alpukat.dart';
 import 'Ayam.dart';
 import 'Telur.dart';
 import 'Kacang.dart';
@@ -92,11 +93,21 @@ class Makanan extends StatelessWidget {
             Text("5. Buah alpukat",
                 style: TextStyle(
                     height: 3, fontSize: 18, fontWeight: FontWeight.bold)),
-            Image(
-              width: 350,
-              height: 250,
-              image: NetworkImage(
-                  "https://cms-dashboard.realfood.co.id/app/uploads/2021/09/avocado.jpg"),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Alpukat(),
+                  ),
+                );
+              },
+              child: Image(
+                width: 350,
+                height: 250,
+                image: NetworkImage(
+                    "https://cms-dashboard.realfood.co.id/app/uploads/2021/09/avocado.jpg"),
+              ),
             ),
           ]),
         ));

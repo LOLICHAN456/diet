@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class Kacang extends StatelessWidget {
-  const Kacang({Key? key}) : super(key: key);
+class Lompat extends StatelessWidget {
+  const Lompat({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Kacang - Kacangan")),
+      appBar: AppBar(title: Text("Skipping")),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
@@ -20,14 +20,14 @@ class Kacang extends StatelessWidget {
                   height: 300,
                   fit: BoxFit.cover,
                   image: NetworkImage(
-                    "https://s1.bukalapak.com/bukalapak-kontenz-production/content_attachments/57446/original/kacang.jpg",
+                    "https://akcdn.detik.net.id/community/media/visual/2021/08/19/ilustrasi-lompat-tali-1_169.jpeg?w=620",
                   ),
                 ),
               ),
             ),
             Center(
               child: Text(
-                "Jenis Kacang - Kacangan Untuk Diet",
+                "Manfaat Skipping Untuk Diet",
                 style: TextStyle(
                     fontSize: 25.0,
                     fontStyle: FontStyle.normal,
@@ -49,7 +49,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "1. Kedelai",
+                        "1. Membakar kalori",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -73,7 +73,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "2. Edamame",
+                        "2. Skipping Setara Olahraga Kardio",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -97,7 +97,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "3. Kenari",
+                        "3. Mengurangi Lemak Perut",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -121,7 +121,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "4. Mete",
+                        "4. Meningkatkan Massa Otot",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -145,7 +145,7 @@ class Kacang extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "5. Kacang Tanah",
+                        "5. Meningkatkan Keseimbangan",
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -173,29 +173,17 @@ class Text1 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://asset.kompas.com/crops/638LAp8Q7AyHp40-CnujsuDL4gI=/0x0:1000x667/750x500/data/photo/2021/11/27/61a2087bc9b84.jpg",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(2),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Skipping yang dilakukan 15 menit per hari efektif membakar sekitar 200 kalori karena per menitnya mampu memangkas 10 kalori. Terutama bagi orang dengan ukuran tubuh sedang.\n\nSementara jika ukuran tubuhnya lebih besar, maka kalori yang terbakar juga sangat memungkinkan lebih banyak.\n\nContohnya pada hasil penelitian kepada orang dengan berat 56 kg yang melakukan skipping selama 30 menit. Total kalori yang terbakar bisa mencapai 340 kalori.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(2),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Kacang kedelai umumnya mudah ditemui dalam bentuk yang sudah diolah seperti pada tempe, tahu atau produk susu. Sumber serat dalam kedelai dapat membantu Anda tetap kenyang dalam waktu lebih lama. Sedangkan serat nabatinya berguna untuk memperlancar pencernaan.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -217,29 +205,17 @@ class Text2 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://akcdn.detik.net.id/community/media/visual/2021/06/24/ilustrasi-edamame_169.jpeg?w=620",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(5),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Rutin melakukan lompat tali dinilai sangat baik untuk meningkatkan kebugaran kardiorespirasi Anda.\n\nMelompat secara terstruktur dan terus menerus memang membutuhkan lebih banyak darah dan oksigen untuk dipompa ke otot-otot yang bekerja.\n\nSehingga dapat meningkatkan detak jantung serta laju pernapasan Anda supaya fungsi jantung menjadi kokoh.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Bagi Anda yang sedang menjalani diet rendah kalori, edamame bisa menjadi pilihan makanan sehat. Cara terbaik mengonsumsi edamame adalah dengan direbus. \n\nSetengah cangkir edamame hanya mengandung 95 kalori. Selain kaya serat dan protein, edamame juga bermanfaat dalam menjaga kesehatan otak.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -261,29 +237,17 @@ class Text3 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://akcdn.detik.net.id/visual/2021/06/24/ilustrasi-kacang-kenari_169.jpeg?w=650",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(5),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Manfaat skipping untuk diet selanjutnya yaitu ampuh melunturkan penumpukan lemak tubuh terutama di bagian perut.\n\nDikarenakan lompat tali ini termasuk latihan HIIT atau intensitas tinggi, maka dampaknya bisa mengencangkan dan membentuk abs serta otot inti.\n\nMeski tidak dibarengi dengan diet, olahraga lompat tinggi tetap bagus dalam mempertahankan berat badan.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Kenari adalah kacang yang bagus untuk diet sebagai sumber asam lemak omega-3. Kenari juga mengandung asam alfa-linolenat (ALA) yang sangat baik bagi jantung dan mendukung kesehatan mental. \n\nDalam 1 ons kacang kenari hanya terdapat 182 kalori. Beberapa hasil penelitian menunjukkan bahwa konsumsi kacang kenari bisa meningkatkan produksi kolesterol baik (HDL). ",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -305,29 +269,17 @@ class Text4 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://akcdn.detik.net.id/community/media/visual/2018/09/12/b9526786-ff10-4dc0-8d1d-fc1455b24052_169.jpeg?w=620",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(5),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Selain bermanfaat untuk memangkas kelebihan lemak, skipping termasuk latihan terbaik untuk meningkatkan fungsi tubuh secara menyeluruh.\n\nGerakan lompat tali ini akan bergantung pada otot tubuh bagian bawah seperti betis, paha, dan bokong, sedangkan tubuh bagian atas yaitu bahu, bisep, serta otot perut.\n\nSemakin aktif otot-otot tersebut bergerak, hasilnya dapat membantu meningkatkan kekuatan massa otot.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Cashews nuts atau kacang mete termasuk kacang-kacangan yang mengandung sedikit lemak yaitu 12 gram dalam 1 ons. Kenari juga tinggi magnesium sebesar 20 persen kebutuhan harian. \n\nHasil pengamatan menunjukkan konsumsi kacang mete dapat mengurangi tekanan darah dan meningkatkan kadar kolesterol HDL.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
@@ -349,29 +301,17 @@ class Text5 extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                ClipOval(
-                  child: Image.network(
-                    "https://res.cloudinary.com/dk0z4ums3/image/upload/v1616471431/attached_image/manfaat-kacang-tanah-sebagai-teman-diet-0-alodokter.jpg",
-                    width: 200,
-                    height: 200,
-                    fit: BoxFit.cover,
-                  ),
+            child: Card(
+              margin: EdgeInsets.all(5),
+              color: Colors.black,
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Menambahkan lompat tali ke rutinitas olahraga harian Anda bisa menjadi cara yang bagus untuk meningkatkan keseimbangan tubuh.\n\nBelajar lompat tali melibatkan koordinasi antara lengan, kaki, dan dada sambil menjaga ritme yang konstan, sehingga Anda harus memiliki keseimbangan stabil.\n\nMenurut hasil studi, lompat tali juga mempunyai dampak bagi peningkatan kepadatan mineral tulang belakang dan leher supaya lebih kuat.",
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
                 ),
-                Card(
-                  margin: EdgeInsets.all(5),
-                  color: Colors.black,
-                  elevation: 10,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "Kacang tanah mempunyai kandungan gula yang sangat rendah sehingga dapat dijadikan alternatif camilan sehat. \n\nSebuah studi menemukan bahwa wanita yang makan selai kacang lebih dari lima kali dalam seminggu, dapat menekan risiko terkena diabetes tipe 2.",
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
         ),
